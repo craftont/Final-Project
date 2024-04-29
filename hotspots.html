@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide for Post-Grad Informatics Students - Hot Spots</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+       .card:hover{
+            transform: none;
+            cursor: default;
+        } 
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Guide for Post-Grad Informatics Students</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="hotspots.html">Hot Spots</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro-section">
+            <div class="slideshow-container">
+                <img class="slides" src="images/hotspots/slide1.jpg" alt="Slideshow Image 1">
+                <img class="slides" src="images/hotspots/slide2.avif" alt="Slideshow Image 2" style="display:none;">
+                <img class="slides" src="images/hotspots/slide3.jpg" alt="Slideshow Image 3" style="display:none;">
+                <img class="slides" src="images/hotspots/slide4.webp" alt="Slideshow Image 4" style="display: none;"> 
+                <img class="slides" src="images/hotspots/slide5.jpg" alt="Slideshow Image 5" style="display: none;">
+            </div>            
+            <div class="intro-text">
+                <p>Explore top cities for technology careers across the US. Select a city on the map to learn more about the opportunities and lifestyle it offers for IT graduates.</p>
+            </div>
+        </section>
+        <section class="info-cards">
+            <div class="card" id="map-container">
+            </div>
+            <div class="card" id="city-info">
+                <h2>City Information</h2>
+                <p>Select a city from the map to see details here.</p>
+            </div>
+        </section>
+        <div id="miami-info" style="display:none;">Miami is rapidly becoming a key player in the tech industry...</div>
+        <div id="sanfran-info" style="display:none;">As the heart of Silicon Valley, San Francisco is synonymous with technology...</div>
+        <div id="nyc-info" style="display:none;">New York City's tech landscape is diverse, encompassing everything from fintech...</div>
+        <div id="seattle-info" style="display:none;">Seattle hosts some of the biggest names in tech...</div>
+        <div id="austin-info" style="display:none;">Austin's tech industry is booming, driven by a friendly business climate...</div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Informatics Guide.</p>
+    </footer>
+    <script src="slideshow.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="map.js"></script>
+</body>
+</html>
